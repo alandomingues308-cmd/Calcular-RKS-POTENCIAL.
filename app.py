@@ -20,7 +20,7 @@ if modo == "Phigros":
     
     if calcular:
         rks = 0 if precision < 55 else ((precision - 55) / 45) ** 2 * dificultad
-        st.success(f"tu rks es igual a {rks:.3f}")
+        st.success(f"El valor de RKS de esta jugada es: {rks:.3f}")
 
 if modo == "Arcaea":
     with st.form("arcaea_form"):
@@ -30,5 +30,5 @@ if modo == "Arcaea":
     
     if calcular:
         potencial = dificultad + constante_arcaea(score)
-        st.success(f"tu rks es igual a {potencial:.2f}")
+        st.success(f"El valor de potencial de esta jugada es: {potencial:.2f}")
         

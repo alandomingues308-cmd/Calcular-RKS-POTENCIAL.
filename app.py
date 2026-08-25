@@ -38,6 +38,7 @@ if modo == "Osu":
     R3= (st.number_input("DanRC: "))*12
     R4= (st.number_input("DanLN: "))*10
     SPI= R1 + R2 + R3 + R4
-    st.success(f"Tu SPI es: {SPI}")
+    
+    st.success(f"Tu SPI es: {SPI: .2f}")
 
         

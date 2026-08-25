@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Calculadora RKS / Potencial")
 
-modo = st.radio("Elige juego:", ["Phigros", "Arcaea"], horizontal=True)
+modo = st.radio("Elige juego:", ["Phigros", "Arcaea","Osu"], horizontal=True)
 
 def constante_arcaea(score):
     if score >= 10_000_000:
@@ -31,4 +31,13 @@ if modo == "Arcaea":
     if calcular:
         potencial = dificultad + constante_arcaea(score)
         st.success(f"El valor de potencial de esta jugada es: {potencial:.2f}")
+
+if modo == "Osu":
+    R1= ((st.number_input("PP: ")**0.5)*2.8
+    R2= (st.number_input("MSD: ")**1.4)
+    R3= (st.number_input("DanRC: ")*12
+    R4= (st.number_inout("DanLN: ")*10
+    SPI= R1 + R2 + R3 + R4
+    st.success(f"Tu SPI es: {SPI}")
+
         

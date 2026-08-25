@@ -33,7 +33,7 @@ if modo == "Arcaea":
         st.success(f"El valor de potencial de esta jugada es: {potencial:.2f}")
 
 if modo == "Osu":
-    R1= ((st.number_input("PP: ")**0.5)*2.8
+    R1= ((st.number_input("PP: "))**0.5)*2.8
     R2= (st.number_input("MSD: ")**1.4)
     R3= (st.number_input("DanRC: ")*12
     R4= (st.number_inout("DanLN: ")*10

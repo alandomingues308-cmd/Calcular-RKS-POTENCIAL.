@@ -34,9 +34,9 @@ if modo == "Arcaea":
 
 if modo == "Osu":
     R1= ((st.number_input("PP: "))**0.5)*2.8
-    R2= (st.number_input("MSD: ")**1.4)
-    R3= (st.number_input("DanRC: ")*12
-    R4= (st.number_inout("DanLN: ")*10
+    R2= (st.number_input("MSD: "))**1.4)
+    R3= (st.number_input("DanRC: "))*12
+    R4= (st.number_inout("DanLN: "))*10
     SPI= R1 + R2 + R3 + R4
     st.success(f"Tu SPI es: {SPI}")
 
